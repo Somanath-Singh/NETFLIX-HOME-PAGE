@@ -3,9 +3,24 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+
+.Heading{
+    font-size: 45px;
+    font-weight: 900;
+    color: #fff;
+}
+.Content{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #fff;
+}
 /* top */
 body{
-    background: black;
+    background: black!important;
+}
+a:hover{
+    color: white!important;
 }
 .top{
     height: 100vh;
@@ -13,7 +28,7 @@ body{
     background-position: center;
     background-size: cover;
 }
-.header{
+.Header{
     width: 75%;
     margin: auto;
     display: flex;
@@ -64,24 +79,25 @@ body{
     width: 80%;
     margin: auto;
     text-align: center;
-    line-height: 45px;
+    line-height: 40px;
     color: white;
     position: relative;
-    top: 20%;
+    top: 30%;
 }
-.text_info h2{
-    font-size: 46px;
+.text_info h1{
+    font-size: 49px;
     font-weight: 900;
 }
 .text_info p{
     font-size: 20px;
     font-weight: 500;
+    margin-top: 10px;
 }
 .lower_menu{
     position: relative;
     top: 30%;
     width: 80%;
-    margin: auto;
+    margin:12px  auto;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -107,11 +123,73 @@ body{
 .lower_menu button:hover{
     background: rgb(192, 24, 24);
 }
+
+
+.HR{
+    background-color: #232323!important;
+    height: 10px;
+    outline: none;
+    border: none;
+}
+
+
+.Container{
+    width: 85%;
+    margin:auto;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    flex-basis: 45%;
+}
+.Right {
+    flex-basis: 45%;
+}
+
+
+
+
+.container1 {
+    width: 85%;
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.left1 {
+    flex-basis: 45%;
+}
+
+.right1 {
+    flex-basis: 45%;
+}
+
+
+.accbtn{
+    background-color: #414141!important;
+    height: 77px;
+     border: none;
+     outline: none;
+}
 @media(max-width:700px){
+    .Heading {
+            font-size: 30px;
+           text-align: center;
+        }
+     .Content {
+            font-size: 17px;
+            text-align: center;
+        }
     .top{
-        height: 58vh;
+        height: 78vh;
     }
-    .header{
+    .Header{
         width: 90%;
     }
     .nav H1{
@@ -130,11 +208,11 @@ body{
         font-size: 10px;
     }
     .text_info{
-        line-height: 40px;
+        line-height: 30px;
         position: relative;
-        top: 10%;
+        top: 15%;
     }
-    .text_info h2{
+    .text_info h1{
         font-size: 30px;
     }
     .text_info p{
@@ -166,5 +244,44 @@ body{
     .lower_menu button:hover{
         background: rgb(255, 17, 17);
     }
+
+
+
+
+        .Container {
+            width: 85%;
+            height: 70vh;
+        }
+    
+        .left {
+            flex-basis: 100%;
+            margin-top: 24px;
+        }
+    
+        .Right {
+            flex-basis: 100%;
+            margin-bottom: 24px;
+        }
+
+
+
+        .container1 {
+            width: 85%;
+            height: 70vh;
+            flex-wrap: nowrap;
+            flex-direction: column-reverse;
+        }
+        
+        .left1 {
+            flex-basis: 100%;
+            margin-bottom: 24px;
+        }
+        
+        .right1 {
+            flex-basis: 100%;
+            margin-top: 38px;
+        }
+        
+        
     
 }
